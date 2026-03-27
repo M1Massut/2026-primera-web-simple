@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximo | Ilustrador Digital & Desarrollador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="bg-shapes">
+        <div class="bg-shape bg-shape-1"></div>
+        <div class="bg-shape bg-shape-2"></div>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo">MX</a>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li class="social-links">
+                <a href="https://github.com/M1Massut" target="_blank" class="social-link" title="GitHub">⌘</a>
+                <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram">◎</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="img/perfil.jpg" alt="Foto de perfil" onerror="this.style.display='none'">
+            </div>
+            <h1>Maximo</h1>
+            <p class="subtitle">Ilustrador Digital & Desarrollador</p>
+            <p class="tagline">Creando arte digital y explorando el mundo del 3D, desarrollo web y videojuegos</p>
+            
+            <div class="skills-grid">
+                <span class="skill-tag">🎨 Ilustración Digital</span>
+                <span class="skill-tag">🎲 3D Design</span>
+                <span class="skill-tag">💻 Desarrollo Web</span>
+                <span class="skill-tag">🎮 Videojuegos</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Soy estudiante de escuela técnica con una gran pasión por el arte digital y la tecnología. Me encanta crear ilustraciones y explorar nuevas formas de expresión visual.</p>
+                <p>Actualmente estoy aprendiendo diseño 3D y buscando mejorar mis habilidades en ilustración digital, desarrollo web y creación de videojuegos.</p>
+                <p>Creo que la combinación de arte y tecnología abre puertas infinitas para crear experiencias únicas e impactantes.</p>
+            </div>
+            <div class="about-visual">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2 class="section-title">Proyectos</h2>
+        <div class="projects-grid">
+            <a href="proyectos/ilustraciones.html" class="project-card">
+                <div class="project-image">
+                    <span class="project-icon">🎨</span>
+                </div>
+                <div class="project-content">
+                    <p class="project-category">Ilustración Digital</p>
+                    <h3 class="project-title">Retratos Digitales</h3>
+                    <p class="project-desc">Creación de personajes y escenas con estilo único usando Procreate y Photoshop.</p>
+                </div>
+            </a>
+
+            <a href="proyectos/diseno3d.html" class="project-card">
+                <div class="project-image">
+                    <span class="project-icon">🎲</span>
+                </div>
+                <div class="project-content">
+                    <p class="project-category">3D Design</p>
+                    <h3 class="project-title">Modelos 3D</h3>
+                    <p class="project-desc">Explorando modelado en Blender y prácticas de texturizado.</p>
+                </div>
+            </a>
+
+            <a href="proyectos/web.html" class="project-card">
+                <div class="project-image">
+                    <span class="project-icon">💻</span>
+                </div>
+                <div class="project-content">
+                    <p class="project-category">Desarrollo Web</p>
+                    <h3 class="project-title">Sitios Web</h3>
+                    <p class="project-desc">Proyectos de práctica en HTML, CSS y JavaScript.</p>
+                </div>
+            </a>
+
+            <a href="proyectos/videojuegos.html" class="project-card">
+                <div class="project-image">
+                    <span class="project-icon">🎮</span>
+                </div>
+                <div class="project-content">
+                    <p class="project-category">Videojuegos</p>
+                    <h3 class="project-title">Prototipos</h3>
+                    <p class="project-desc">Pequeños proyectos explorando mecánicas de juego.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="rating-section">
+        <h2>¿Te gusta mi trabajo?</h2>
+        <p>Califica esta página web</p>
+        <div class="stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        <p class="rating-message"></p>
+        <p class="rating-count">Total de calificaciones: <span id="total-ratings">0</span></p>
+    </section>
+
+    <footer id="contact">
+        <p>¿Quieres contactarme? <a href="mailto:maximo@email.com">maximo@email.com</a></p>
+        <p style="margin-top: 1rem; font-size: 0.8rem;">© 2026 Maximo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
